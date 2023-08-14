@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-class TwoSum {
+class Solution {
     public int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> numsDict = new HashMap<>();
         // Allocate for 2 intefers in the array
@@ -20,9 +20,4 @@ class TwoSum {
         return result;
     }
 
-    public static void main(String[] args) {
-        TwoSum solution = new TwoSum();
-        int[] results = { 2, 2 };
-        solution.twoSum(results, 6);
-    }
-}
+    
