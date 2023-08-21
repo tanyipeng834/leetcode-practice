@@ -40,6 +40,12 @@ Keep note of the size of the tree to make sure that the smaller tree is connecte
   return i}
 </pre>
 
+<h3>Itearing over a Linked List</h3>
+<pre class="code-block">
+  while (current is not None):
+    current = current.next
+</pre>
+
     
   </p>
 
