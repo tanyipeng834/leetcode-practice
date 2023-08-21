@@ -40,6 +40,46 @@ Keep note of the size of the tree to make sure that the smaller tree is connecte
   return i}
 </pre>
 
+<h3>Itearing over a Linked List</h3>
+<pre class="code-block">
+  while (current is not None):
+    current = current.next
+</pre>
+
+<h2>Binary Tree</h2>
+
+<h3>Pre-Order Traversal</h3>
+<p>Visit the parent node before visiting left children and right children</p>
+<pre class="code-block">
+  def pre_order_traversal(root):
+    if root:
+        print(root.val, end=" ")
+        pre_order_traversal(root.left)
+        pre_order_traversal(root.right)
+</pre>
+
+<h3>In-Order Traversal</h3>
+<p>Visit the left Node before visiting the parent and then the right node</p>
+<pre class="code-block">
+  def in_order_traversal(root):
+    if root:
+        pre_order_traversal(root.left)
+        print(root.val, end=" ")
+        pre_order_traversal(root.right)
+</pre>
+
+<h3>Post-Order Traversal</h3>
+<p>Visit the left Node and Right Node before visiting the parent</p>
+<pre class="code-block">
+  def post_order_traversal(root):
+    if root:
+        pre_order_traversal(root.left)
+        pre_order_traversal(root.right)
+        print(root.val, end=" ")
+</pre>
+
+
+
     
   </p>
 
