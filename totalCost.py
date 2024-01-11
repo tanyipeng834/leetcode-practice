@@ -1,5 +1,6 @@
 from collections import deque
-from heapq import *
+
+import heapq
 class Solution:
     def totalCost(self, costs: List[int], k: int, candidates: int) -> int:
         middle = deque()
