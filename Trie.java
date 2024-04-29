@@ -71,7 +71,7 @@ class Trie {
         return false;
     }
     
-    public boolean startsWith(String prefix) {
+    public boolean startsWith(String prefix) 
         TrieNode current = root;
         List<Character> charList = new ArrayList<Character>();
         for(char c: prefix.toCharArray())
